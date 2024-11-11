@@ -5,7 +5,7 @@ from docx import Document
 
 # 创建excel文档以及表头
 workbook = xlwt.Workbook(encoding='utf-8')
-sheet = workbook.add_sheet('专利')
+sheet = workbook.add_sheet('主要客户')
 title = ['序号', '企业序号', '统一社会信用代码', '客户序号', '客户名称', '关联关系', '销售额（元）', '占比（%）']
 # 序号
 row_num = 0
