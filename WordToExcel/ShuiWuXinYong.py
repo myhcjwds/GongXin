@@ -1,13 +1,14 @@
+# 3.5税务信用
+
 import os
 import xlwt
-from WordToExcel.path_tool import get_word_folder_path, get_output_folder_path
+from path_tool import get_word_folder_path, get_output_folder_path
 from docx import Document
-
 
 # 创建excel文档以及表头
 workbook = xlwt.Workbook(encoding='utf-8')
-sheet = workbook.add_sheet('年报-股东（发起人）出资信息')
-title = ['序号', '企业序号', '统一社会信用代码', '年份', '出资序号', '发起人', '认缴出资额（万元）', '认缴出质时间', '认缴出资方式', '实缴出资额（万元）', '实缴出资时间', '实缴出资方式']
+sheet = workbook.add_sheet('税务信用')
+title = ['序号', '企业序号', '统一社会信用代码', '信用序号', '评价年度', '纳税人识别号', '纳税人信用等级', '评价单位']
 # 序号
 row_num = 0
 for col, column in enumerate(title):
@@ -20,13 +21,11 @@ word_folder_path = get_word_folder_path()
 output_folder = get_output_folder_path()
 
 
-
 # 企业序号
 qiye_id = 0
 # 遍历文件夹中的所有.docx文件
 for filename in os.listdir(word_folder_path):
     if filename.endswith('.docx'):
-
         # word的绝对路径
         docx_path = os.path.join(word_folder_path, filename)
 
@@ -38,45 +37,42 @@ for filename in os.listdir(word_folder_path):
             credit_code = doc.tables[0].rows[3].cells[3].text
         else:
             credit_code = None
+
         # 写入excel
-        tables = [table for table in doc.tables if table.rows[0].cells[1].text == "发起人" and table.rows[0].cells[3].text == "认缴出质时间"]
+        for table in doc.tables:
 
-        if len(tables) != 0:
-            qiye_id += 1
-
-            for table_id, table in enumerate(tables):
-                # if table.rows[0].cells[1].text == "发起人" and table.rows[0].cells[3].text == "认缴出质时间":
-
+            if len(table.rows[0].cells) == 5 and table.rows[0].cells[3].text == "纳税人信用等级":
+                # qiye_id += 1 必须保证 后面 有break
+                qiye_id += 1
                 for hang_id, row in enumerate(table.rows):
 
                     # 不要word中table的表头信息(前面已经手动生成)
                     if hang_id != 0:
-
                         # 第一列，序号
                         sheet.write(row_num, 0, row_num)
                         # 第二列，企业序号（测试版本，到时候需要根据word来，一个word对应一个*********************）
                         sheet.write(row_num, 1, qiye_id)
                         # 第三列，统一社会信用代码
                         sheet.write(row_num, 2, credit_code)
-                        if table_id == 0:
-                            sheet.write(row_num, 3, '2023')
-                        if table_id == 1:
-                            sheet.write(row_num, 3, '2022')
-                        if table_id == 2:
-                            sheet.write(row_num, 3, '2021')
-                        # 其余列，纯专利信息（插入时列号+4，因为excel相比于word中的table，前面加了4列）
+
+                        # 其余列，纯专利信息（插入时列号+3，因为excel相比于word中的table，前面加了3列）
                         for lie_id, cell in enumerate(row.cells):
-                            sheet.write(row_num, lie_id + 4, cell.text)
+                            sheet.write(row_num, lie_id + 3, cell.text)
                             # print(cell.text)
                         # 行号+ 1
                         row_num += 1
 
-                    # 由于一个企业有三个这样的table，所以不能break了
-                    # break
+                # 找到对应table后就停止
+                break
+
+
+            # # 如果当前企业的word中没用该栏目的表格信息
+            # else:
+            #
+            #
 
 
 
-
-cls_path = os.path.join(output_folder, '年报-股东（发起人）出资信息.xls')
+cls_path = os.path.join(output_folder, '税务信用.xls')
 
 workbook.save(cls_path)

@@ -24,7 +24,6 @@ qiye_id = 0
 # 遍历文件夹中的所有.docx文件
 for filename in os.listdir(word_folder_path):
     if filename.endswith('.docx'):
-        qiye_id += 1
 
         # word的绝对路径
         docx_path = os.path.join(word_folder_path, filename)
@@ -41,8 +40,9 @@ for filename in os.listdir(word_folder_path):
         # 写入excel
         for table in doc.tables:
             # 找到对应的table
-            if table.rows[0].cells[1].text == "供应商名称":
-
+            if len(table.rows[0].cells) == 5 and table.rows[0].cells[1].text == "供应商名称":
+                # qiye_id += 1 必须保证 后面 有break
+                qiye_id += 1
                 for hang_id, row in enumerate(table.rows):
 
                     # 不要word中table的表头信息(前面已经手动生成)

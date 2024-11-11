@@ -26,8 +26,7 @@ qiye_id = 0
 # 遍历文件夹中的所有.docx文件
 for filename in os.listdir(word_folder_path):
     if filename.endswith('.docx'):
-        print(filename)
-        qiye_id += 1
+
         # word的绝对路径
         docx_path = os.path.join(word_folder_path, filename)
 
@@ -42,41 +41,44 @@ for filename in os.listdir(word_folder_path):
         # 写入excel
         tables = [table for table in doc.tables if table.rows[0].cells[0].text == "资产总额" and table.rows[3].cells[2].text == "负债总额"]
 
-        for table_id, table in enumerate(tables):
+        if len(tables) != 0:
+            qiye_id += 1
 
-            # 第一列，序号
-            sheet.write(row_num, 0, row_num)
-            # 第二列，企业序号（测试版本，到时候需要根据word来，一个word对应一个*********************）
-            sheet.write(row_num, 1, qiye_id)
-            # 第三列，统一社会信用代码
-            sheet.write(row_num, 2, credit_code)
-            # 第四列，年份
-            if table_id == 0:
-                sheet.write(row_num, 3, '2023')
-            if table_id == 1:
-                sheet.write(row_num, 3, '2022')
-            if table_id == 2:
-                sheet.write(row_num, 3, '2021')
-            # 第五列，资产总额
-            sheet.write(row_num, 4, table.rows[0].cells[1].text)
-            # 第六列，浙江省财政厅
-            sheet.write(row_num, 5, table.rows[0].cells[3].text)
-            # 第七列，营业总收入
-            sheet.write(row_num, 6, table.rows[1].cells[1].text)
-            # 第八列，利润总额
-            sheet.write(row_num, 7, table.rows[1].cells[3].text)
-            # 第九列，营业总收入中主营业务收入
-            sheet.write(row_num, 8, table.rows[2].cells[1].text)
-            # 第十列，净利润
-            sheet.write(row_num, 9, table.rows[2].cells[3].text)
-            # 第十一列，纳税总额
-            sheet.write(row_num, 10, table.rows[3].cells[1].text)
-            # 第十二列，负债总额
-            sheet.write(row_num, 11, table.rows[3].cells[3].text)
+            for table_id, table in enumerate(tables):
+
+                # 第一列，序号
+                sheet.write(row_num, 0, row_num)
+                # 第二列，企业序号（测试版本，到时候需要根据word来，一个word对应一个*********************）
+                sheet.write(row_num, 1, qiye_id)
+                # 第三列，统一社会信用代码
+                sheet.write(row_num, 2, credit_code)
+                # 第四列，年份
+                if table_id == 0:
+                    sheet.write(row_num, 3, '2023')
+                if table_id == 1:
+                    sheet.write(row_num, 3, '2022')
+                if table_id == 2:
+                    sheet.write(row_num, 3, '2021')
+                # 第五列，资产总额
+                sheet.write(row_num, 4, table.rows[0].cells[1].text)
+                # 第六列，浙江省财政厅
+                sheet.write(row_num, 5, table.rows[0].cells[3].text)
+                # 第七列，营业总收入
+                sheet.write(row_num, 6, table.rows[1].cells[1].text)
+                # 第八列，利润总额
+                sheet.write(row_num, 7, table.rows[1].cells[3].text)
+                # 第九列，营业总收入中主营业务收入
+                sheet.write(row_num, 8, table.rows[2].cells[1].text)
+                # 第十列，净利润
+                sheet.write(row_num, 9, table.rows[2].cells[3].text)
+                # 第十一列，纳税总额
+                sheet.write(row_num, 10, table.rows[3].cells[1].text)
+                # 第十二列，负债总额
+                sheet.write(row_num, 11, table.rows[3].cells[3].text)
 
 
-            # 行号+ 1
-            row_num += 1
+                # 行号+ 1
+                row_num += 1
 
 
 

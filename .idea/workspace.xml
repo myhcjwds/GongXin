@@ -25,7 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/WordToExcel/NianBao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WordToExcel" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -34,8 +34,8 @@
       <recent name="E:\研究生总结\博士\科研项目\工信企业数据平台\GongXin\GongXin\WordToExcel" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\研究生总结\博士\科研项目\工信企业数据平台\GongXin\GongXin\WordToExcel\NianBao" />
       <recent name="E:\研究生总结\博士\科研项目\工信企业数据平台\GongXin\GongXin\WordToExcel" />
+      <recent name="E:\研究生总结\博士\科研项目\工信企业数据平台\GongXin\GongXin\WordToExcel\NianBao" />
       <recent name="E:\研究生总结\博士\科研项目\工信企业数据平台\GongXin\GongXin" />
     </key>
   </component>
@@ -51,29 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SheBao">
-    <configuration name="DuiWaiTouZi" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="GongXin" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/DuiWaiTouZi.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.ZhuYaoKeHu">
     <configuration name="GuDongChuZi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GongXin" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,7 +74,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="QiYeZiChanZhuangKuang" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ShangBiao" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GongXin" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,12 +82,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel/NianBao" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/NianBao/QiYeZiChanZhuangKuang.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/ShangBiao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +96,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SheBao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ShuiWuXinYong" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GongXin" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,12 +104,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel/NianBao" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/NianBao/SheBao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/ShuiWuXinYong.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="WangZhanBeiAn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="GongXin" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/WordToExcel" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WordToExcel/WangZhanBeiAn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SheBao" />
-        <item itemvalue="Python.QiYeZiChanZhuangKuang" />
-        <item itemvalue="Python.GuDongChuZi" />
         <item itemvalue="Python.ZhuYaoKeHu" />
-        <item itemvalue="Python.DuiWaiTouZi" />
+        <item itemvalue="Python.WangZhanBeiAn" />
+        <item itemvalue="Python.GuDongChuZi" />
+        <item itemvalue="Python.ShangBiao" />
+        <item itemvalue="Python.ShuiWuXinYong" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +182,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731290398104</updated>
-      <workItem from="1731290399176" duration="7215000" />
+      <workItem from="1731290399176" duration="11374000" />
     </task>
     <servers />
   </component>
@@ -200,12 +200,26 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/WordToExcel/WangZhanBeiAn.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GongXin$ShuiWuXinYong.coverage" NAME="ShuiWuXinYong Coverage Results" MODIFIED="1731310624524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
     <SUITE FILE_PATH="coverage/GongXin$ZhuYaoGongYingShang.coverage" NAME="ZhuYaoGongYingShang Coverage Results" MODIFIED="1731292130864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
     <SUITE FILE_PATH="coverage/GongXin$ZhuanLi.coverage" NAME="ZhuanLi Coverage Results" MODIFIED="1731292139385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
     <SUITE FILE_PATH="coverage/GongXin$DuiWaiTouZi.coverage" NAME="DuiWaiTouZi Coverage Results" MODIFIED="1731292152184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
-    <SUITE FILE_PATH="coverage/GongXin$GuDongChuZi.coverage" NAME="GuDongChuZi Coverage Results" MODIFIED="1731306836139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel/NianBao" />
-    <SUITE FILE_PATH="coverage/GongXin$ZhuYaoKeHu.coverage" NAME="ZhuYaoKeHu Coverage Results" MODIFIED="1731306816052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
+    <SUITE FILE_PATH="coverage/GongXin$ShangBiao.coverage" NAME="ShangBiao Coverage Results" MODIFIED="1731311429931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
+    <SUITE FILE_PATH="coverage/GongXin$WangZhanBeiAn.coverage" NAME="WangZhanBeiAn Coverage Results" MODIFIED="1731312805655" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
+    <SUITE FILE_PATH="coverage/GongXin$GuDongChuZi.coverage" NAME="GuDongChuZi Coverage Results" MODIFIED="1731312783020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel/NianBao" />
+    <SUITE FILE_PATH="coverage/GongXin$ZhuYaoKeHu.coverage" NAME="ZhuYaoKeHu Coverage Results" MODIFIED="1731313162256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel" />
     <SUITE FILE_PATH="coverage/GongXin$QiYeZiChanZhuangKuang.coverage" NAME="QiYeZiChanZhuangKuang Coverage Results" MODIFIED="1731307736693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel/NianBao" />
     <SUITE FILE_PATH="coverage/GongXin$SheBao.coverage" NAME="SheBao Coverage Results" MODIFIED="1731308534115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WordToExcel/NianBao" />
   </component>
