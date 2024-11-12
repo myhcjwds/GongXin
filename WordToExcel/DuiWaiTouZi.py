@@ -71,6 +71,6 @@ for filename in os.listdir(word_folder_path):
             #
 
 
-cls_path = os.path.join(output_folder, '对外投资.xls')
+cls_path = os.path.join(output_folder, '对外投资.xlsx')
 
 workbook.save(cls_path)

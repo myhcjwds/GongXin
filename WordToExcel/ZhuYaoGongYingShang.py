@@ -73,6 +73,6 @@ for filename in os.listdir(word_folder_path):
 
 
 
-cls_path = os.path.join(output_folder, '主要供应商.xls')
+cls_path = os.path.join(output_folder, '主要供应商.xlsx')
 
 workbook.save(cls_path)

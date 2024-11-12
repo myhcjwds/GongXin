@@ -116,6 +116,6 @@ for filename in os.listdir(word_folder_path):
 
 
 
-cls_path = os.path.join(output_folder, '年报-社保信息.xls')
+cls_path = os.path.join(output_folder, '年报-社保信息.xlsx')
 
 workbook.save(cls_path)

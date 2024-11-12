@@ -70,6 +70,6 @@ for filename in os.listdir(word_folder_path):
 
 
 
-cls_path = os.path.join(output_folder, '网站备案.xls')
+cls_path = os.path.join(output_folder, '网站备案.xlsx')
 
 workbook.save(cls_path)
